@@ -6,3 +6,6 @@
   color: gray;
   cursor: pointer;
 }
+.headerOption:hover {
+  color: black;
+}

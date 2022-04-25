@@ -1,5 +1,13 @@
 .header {
   display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid lightgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 .header_left > img {
   object-fit: contain;
@@ -23,4 +31,8 @@
   outline: none;
   border: none;
   background: none;
+}
+
+.header_right {
+  display: flex;
 }
