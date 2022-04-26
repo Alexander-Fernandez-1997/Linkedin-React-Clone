@@ -17,7 +17,7 @@ export const Sidebar = () => {
     <div className="sidebar">
       <div className="sidebar_top">
         <img
-          src="https://media-exp1.licdn.com/dms/image/C4D16AQEPyMqKooyQFQ/profile-displaybackgroundimage-shrink_350_1400/0/1650439743263?e=2147483647&v=beta&t=ch-XgzvvpN0LF8uzAihWPZBZBbMNjWvEXOnLciBSqy0"
+          src="https://source.unsplash.com/random/?productivity,city"
           alt=""
         />
         <Avatar src={profilePic} className="sidebar_avatar">
@@ -29,19 +29,19 @@ export const Sidebar = () => {
       <div className="sidebar_stats">
         <div className="sidebar_stat">
           <p>Who viewed you</p>
-          <p className="sidebar_statNumber">2,543</p>
+          <p className="sidebar_statNumber">1,543</p>
         </div>
         <div className="sidebar_stat">
           <p>Views on post</p>
-          <p className="sidebar_statNumber">2,448</p>
+          <p className="sidebar_statNumber">8,644</p>
         </div>
       </div>
       <div className="sidebar_bottom">
         <p>Recent</p>
         {recentItem("reactjs")}
         {recentItem("programming")}
-        {recentItem("vue")}
-        {recentItem("ruby")}
+        {recentItem("firebase")}
+        {recentItem("typescript")}
         {recentItem("rubyonrails")}
       </div>
     </div>

@@ -21,10 +21,22 @@ export const Widgets = () => {
         <Info />
       </div>
       {newsArticle("New feature: LinkedIn for Work", "Learn more now")}
-      {newsArticle("New feature: LinkedIn for Work", "Learn more now")}
-      {newsArticle("New feature: LinkedIn for Work", "Learn more now")}
-      {newsArticle("New feature: LinkedIn for Work", "Learn more now")}
-      {newsArticle("New feature: LinkedIn for Work", "Learn more now")}
+      {newsArticle(
+        "Mechanic receives first payment in Bitcoin to mend Lamborghini",
+        "Learn more now"
+      )}
+      {newsArticle(
+        "Crypto advocate mounts challenge to longtime Silicon Valley Congresswoman",
+        "Learn more now"
+      )}
+      {newsArticle(
+        "Bitcoin repeats rare weekly chart signal that resulted in 50% BTC price dips",
+        "Learn more now"
+      )}
+      {newsArticle(
+        "Binance announces crypto card for Ukrainian refugees",
+        "Learn more now"
+      )}
     </div>
   );
 };
