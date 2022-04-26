@@ -5,7 +5,7 @@ import { selectUser } from "./features/userSlice";
 import "./Sidebar.css";
 
 export const Sidebar = () => {
-  const { email, name, profilePic, uid } = useSelector(selectUser);
+  const { email, name, profilePic } = useSelector(selectUser);
   const recentItem = (topic) => (
     <div className="sidebar_recentItem">
       <span className="sidebar_hash">#</span>
@@ -21,7 +21,7 @@ export const Sidebar = () => {
           alt=""
         />
         <Avatar src={profilePic} className="sidebar_avatar">
-          {name[0]}
+          {email[0]}
         </Avatar>
         <h2>{name}</h2>
         <h4>{email}</h4>

@@ -11,7 +11,7 @@ export const HeaderOption = ({ avatar, Icon, title, onClick }) => {
       {Icon && <Icon className="headerOption_icon" />}
       {avatar === "avatar" && (
         <Avatar className="headerOption_icon" src={user?.profilePic}>
-          {user?.name[0]}
+          {user?.email[0]}
         </Avatar>
       )}
       <h3 className="headerOption_title">{title}</h3>
