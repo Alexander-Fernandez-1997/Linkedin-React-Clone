@@ -9,8 +9,16 @@ import {
   SupervisorAccount,
 } from "@material-ui/icons";
 import { HeaderOption } from "./HeaderOption";
+import { useDispatch } from "react-redux";
+import { auth } from "./firebase";
+import { logout } from "./features/userSlice";
 
 export const Header = () => {
+  const dispatch = useDispatch();
+  const logoutOfApp = () => {
+    dispatch(logout());
+    auth.signOut();
+  };
   return (
     <div className="header">
       <div className="header_left">
@@ -28,6 +36,7 @@ export const Header = () => {
         <HeaderOption Icon={Chat} title="Messaging" />
         <HeaderOption Icon={Notifications} title="Notifications" />
         <HeaderOption
+          onClick={logoutOfApp}
           avatar="https://avatars.githubusercontent.com/u/84294307?v=4"
           title="me"
         />
