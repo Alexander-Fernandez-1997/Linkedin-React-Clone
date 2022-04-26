@@ -28,7 +28,7 @@ export const Header = () => {
         <HeaderOption Icon={Chat} title="Messaging" />
         <HeaderOption Icon={Notifications} title="Notifications" />
         <HeaderOption
-          avatar="https://compassionate-leakey-e9b16b.netlify.app/images/IG_Sonny.jpeg"
+          avatar="https://avatars.githubusercontent.com/u/84294307?v=4"
           title="me"
         />
       </div>
