@@ -2,7 +2,7 @@ import { Avatar } from "@material-ui/core";
 import React from "react";
 import { useSelector } from "react-redux";
 import { selectUser } from "./features/userSlice";
-import "./Sidebar.css";
+import "./styles/Sidebar.css";
 
 export const Sidebar = () => {
   const { email, name, profilePic } = useSelector(selectUser);

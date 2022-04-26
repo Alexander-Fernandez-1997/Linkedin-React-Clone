@@ -7,7 +7,7 @@ import {
 } from "@material-ui/icons";
 import React, { forwardRef } from "react";
 import { InputOption } from "./InputOption";
-import "./Post.css";
+import "./styles/Post.css";
 
 export const Post = forwardRef(
   ({ name, description, message, photoUrl }, ref) => {

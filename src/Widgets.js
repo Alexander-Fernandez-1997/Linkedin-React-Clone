@@ -1,6 +1,6 @@
 import { FiberManualRecord, Info } from "@material-ui/icons";
 import React from "react";
-import "./Widgets.css";
+import "./styles/Widgets.css";
 
 export const Widgets = () => {
   const newsArticle = (heading, subtitle) => (

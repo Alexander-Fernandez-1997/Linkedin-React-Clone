@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { login } from "./features/userSlice";
 import { auth } from "./firebase";
-import "./Login.css";
+import "./styles/Login.css";
 
 export const Login = () => {
   const [email, setEmail] = useState("");
