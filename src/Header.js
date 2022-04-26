@@ -35,11 +35,7 @@ export const Header = () => {
         <HeaderOption Icon={BusinessCenter} title="Jobs" />
         <HeaderOption Icon={Chat} title="Messaging" />
         <HeaderOption Icon={Notifications} title="Notifications" />
-        <HeaderOption
-          onClick={logoutOfApp}
-          avatar="https://avatars.githubusercontent.com/u/84294307?v=4"
-          title="me"
-        />
+        <HeaderOption onClick={logoutOfApp} title="me" avatar={"avatar"} />
       </div>
     </div>
   );

@@ -11,8 +11,11 @@ import { db } from "./firebase";
 import { InputOption } from "./InputOption";
 import { Post } from "./Post";
 import firebase from "firebase";
+import { useSelector } from "react-redux";
+import { selectUser } from "./features/userSlice";
 
 export const Feed = () => {
+  const { name, email, profilePic } = useSelector(selectUser);
   const [input, setInput] = useState("");
   const [posts, setPosts] = useState([]);
   useEffect(() => {
@@ -26,10 +29,10 @@ export const Feed = () => {
   const sendPost = (e) => {
     e.preventDefault();
     db.collection("posts").add({
-      name: "John Doe",
-      description: "Software Engineer",
+      name: name,
+      description: email,
       message: input,
-      photoUrl: "",
+      photoUrl: profilePic || "",
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
     setInput("");

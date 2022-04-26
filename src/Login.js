@@ -13,6 +13,21 @@ export const Login = () => {
 
   const loginToApp = (e) => {
     e.preventDefault();
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((authUser) => {
+        dispatch(
+          login({
+            email: authUser.user.email,
+            name: authUser.user.displayName,
+            profilePic: authUser.user.photoURL,
+            uid: authUser.user.uid,
+          })
+        );
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
   };
   const register = () => {
     if (!name) {
