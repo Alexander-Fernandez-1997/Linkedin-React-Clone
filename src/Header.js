@@ -27,6 +27,10 @@ export const Header = () => {
         <HeaderOption Icon={BusinessCenter} title="Jobs" />
         <HeaderOption Icon={Chat} title="Messaging" />
         <HeaderOption Icon={Notifications} title="Notifications" />
+        <HeaderOption
+          avatar="https://compassionate-leakey-e9b16b.netlify.app/images/IG_Sonny.jpeg"
+          title="me"
+        />
       </div>
     </div>
   );
