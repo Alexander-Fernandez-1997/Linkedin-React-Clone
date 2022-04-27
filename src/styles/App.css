@@ -15,5 +15,6 @@
 @media screen and (max-width: 768px) {
   .app_body {
     flex-direction: column;
+    width: 100%;
   }
 }
