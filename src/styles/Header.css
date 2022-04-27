@@ -37,3 +37,53 @@
 .header_right {
   display: flex;
 }
+.topnav a.icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .header_left {
+    min-width: 80%;
+  }
+  .header_search {
+    width: 100%;
+  }
+
+  .topnav #myLinks {
+    display: none;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .topnav a {
+    color: gray;
+
+    text-decoration: none;
+    font-size: 40px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 20%;
+    text-align: center;
+  }
+
+  .topnav a:hover {
+    color: black;
+  }
+
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+}
